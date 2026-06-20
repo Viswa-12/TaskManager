@@ -1,0 +1,49 @@
+.innerContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.addTaskContainer{
+    margin-top: 2rem;
+    width:50%;
+    background: linear-gradient(to left,yellow,rgb(60, 165, 125));
+    padding-inline: 5%;
+    padding-block: 3%;
+    border-radius: .5rem;
+}
+
+.tasklabel{
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.taskNameInput{
+    padding-inline: 2%;
+    padding-block: .8rem;
+    width:90%;
+    border-radius: 15px;
+    border:none;
+    outline: none;
+    color:#000;
+    margin-block: 1rem;
+}
+.taskDescription{
+    margin-block: 1rem;
+    color: #000;
+    padding-inline: 2%;
+    padding-block:.8rem;
+    border-radius: 15px;
+    outline: none;
+}
+
+.button{
+    background: linear-gradient(to right,yellow,rgb(60, 165, 125));
+    color:#000;
+}
+
+.taskErrMsg{
+    color:red;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}

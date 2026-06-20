@@ -1,0 +1,112 @@
+*{
+        box-sizing: border-box;
+        margin:0;
+        padding:0;
+}
+.signFormContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(176, 200, 125);
+    background-image: url("../images/image1.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.formHeading{
+    position:relative;
+    color:rgb(176, 200, 125);
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+.formHeading::after{
+    content:"";
+    position: absolute;
+    width:20%;
+    height:4px;
+    background-color: rgb(176, 200, 125);
+    top:110%;
+    left:38%;
+
+}
+
+.signForm{
+    background-color: rgba(94, 111, 207, 0.6);
+    width:350px;
+    padding-block: 1.8rem;
+    padding-inline:3%;
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+}
+.inputContainer{
+    margin-block: .7rem;
+    width:100%;
+    /* border: 2px solid red; */
+}
+.userInputContainer{
+    width:100%;
+    height:3rem;
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+    background-color: rgb(194, 210, 229);
+    padding-inline: 4%;
+    border-radius: 1.2rem;
+}
+.userInput{
+    width:100%;
+    height:100%;
+    border:none;
+    background-color: transparent;
+    margin-left: .8rem;
+    outline: none;
+    font-size: 17px;
+    color:black;
+}
+.inputIcon{
+    height:100%;
+}
+.signBtnContainer{
+    display: flex;
+    justify-content: center;
+    margin-block: .8rem;
+}
+
+.signBtn{
+    background: linear-gradient(to left,yellow,rgb(60, 165, 125));
+    border:none;
+    outline: none;
+    width:135px;
+    padding-block: .8rem;
+    color:#fff;
+    border-radius: 1.3rem;
+    font-weight: bold;
+}
+.signBtn:hover{
+    cursor: pointer;
+}
+.formMsg{
+    text-align: center;
+}
+
+.formLink{
+    font-size: 17px;
+    font-weight: 600;
+    color:rgb(176, 200, 125);
+    text-decoration: none;
+}
+
+.errorMsg{
+    color:rgb(203, 245, 18);
+    font-size: 15px;
+    font-weight: 500;
+}
+@media screen and (max-width:320px){
+    .signForm{
+        width:270px;
+    }
+}
